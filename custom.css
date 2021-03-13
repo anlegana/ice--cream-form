@@ -1,0 +1,19 @@
+/*
+Name: Andres Gaviria
+Date: 24/02/2021
+*/
+
+#container {
+    width:500px;
+    margin-top: 15px ;    <!--            /*15px Container*/-->
+    border: 1px solid grey;<!--            /*1px solid grey Container*/-->
+    padding: 10px;<!--            /*10 padding container */-->
+    background-image: none;
+    background-image: url("../img/nIce.png") ;
+
+}
+#legendd{
+
+   color: pink;
+
+}

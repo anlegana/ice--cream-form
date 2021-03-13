@@ -1,0 +1,121 @@
+<!--
+Name: Andres Gaviria
+Date: 24/02/2021
+
+Purpose: HTML of the Andres ice cream show
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <title>Working with Forms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/utility.js"></script>
+    <script src="js/processOrder.js"></script>
+    <noscript>
+        "You don't have Javascript turned on! In order for this page to function properly you must turn on Javascript."
+    </noscript>
+</head>
+<body>
+<div id="container">
+    <fieldset>
+        <legend id="legendd">Andres' Ice Cream Shop Form</legend>
+        <form id="myForm">
+            <!--            //First Name form-->
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" class="form-control"/>
+            <!--            //Last Name form-->
+            <br>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" class="form-control"/>
+            <!--            //Phone form-->
+            <br>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="You must type 10 numbers" class="form-control"/>
+            <!--            //Address form (Text Area)-->
+            <br>
+            <label for="address">Address</label>
+            <br>
+            <textarea type="textArea" id="address" rows="2" cols="20"></textarea>
+            <!--            //ItemQuantity form Dropdown-->
+            <br>
+            <label for="itemQuantity">How many balls would you like?</label>
+            <select id="itemQuantity" class="form-control">
+                <option value="">Please select</option>
+                <option value="1">1 ($5.00)</option>
+                <option value="2">2 ($10.00)</option>
+                <option value="3">3 ($15.00)</option>
+            </select>
+            <!--            //Flavor  form Dropdown-->
+            <br>
+            <label for="itemFlavor">Which flavor would you like?</label>
+            <select id="itemFlavor" class="form-control">
+                <option value="">Please select</option>
+                <option value="1">Vanilla</option>
+                <option value="2">Chocolate</option>
+                <option value="3">Strawberry</option>
+            </select>
+
+            <!--            //Flavor  form CheckBox-->
+            <label>Toppings</label>
+            <br>
+            <input type="checkbox" id="nuts" name="topping"/>
+            <label for="nuts">Pieces of nuts</label>
+            <input type="checkbox" id="chocoChips" name="topping"/>
+            <label for="chocoChips">Choco Chips</label>
+            <input type="checkbox" id="raisins" name="topping"/>
+            <label for="raisins">Raisins</label>
+            <input type="checkbox" id="fruits" name="topping"/>
+            <label for="fruits">Pieces of fruits</label>
+            <br>
+            <input type="checkbox" id="cookies" name="topping"/>
+            <label for="cookies">Cookies</label>
+
+
+            <br>
+            <br>
+            <label>Type of container</label>
+            <br>
+            <input type="radio" id="cone" name="container" value="cone">
+            <label for="cone">Cone($5.00)</label><br>
+            <input type="radio" id="glass" name="container" value="glass">
+            <label for="glass">Glass(10.00)</label><br>
+            <br>
+            <!--            /*Type of container form Radio buttons*/-->
+            <label>Type of sauce</label>
+            <br>
+            <input type="radio" id="condensedMilk" name="sauce" value="CondensedMilk">
+            <label for="condensedMilk">Condensed Milk</label><br>
+            <input type="radio" id="chocolateSauce" name="sauce" value="ChocolateSauce">
+            <label for="chocolateSauce">Chocolate Sauce</label><br>
+            <br>
+            <!--            /*Submit button*/-->
+            <button type="button" id="submitButton"/>
+            Submit </button>
+            <!--            /*Reset button*/-->
+            <br>
+            <input type="reset" value="Reset" id="resetButton"/>
+            <br>
+
+
+        </form>
+    </fieldset>
+</div>
+<!--            /*outputDiv */-->
+<div id="outputDiv">
+    <p id="titleOutput"></p>
+    <p id="firstNameOutput"></p>
+    <p id="lastNameOutput"></p>
+    <p id="phoneOutput"></p>
+    <p id="addressOutput"></p>
+    <p id="itemQuantityOutput"></p>
+    <p id="itemFlavorOutput"></p>
+    <p id="toppingsOutput"></p>
+    <p id="containerOutput"></p>
+    <p id="sauceOutput"></p>
+    <p id="totalCost"></p>
+</div>
+</body>
+</html>
